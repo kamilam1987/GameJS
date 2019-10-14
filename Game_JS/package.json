@@ -1,0 +1,18 @@
+{
+  "name": "game_js",
+  "version": "1.0.0",
+  "description": "5 in a row game",
+  "main": "game.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Kamila",
+  "license": "ISC"
+}

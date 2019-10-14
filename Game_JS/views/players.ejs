@@ -1,0 +1,21 @@
+<!-- Form to fill players name -->
+<html>
+    <head>
+        <link href="assets/instruction.css" rel="stylesheet" type="text/css">
+        <title>5-in-a-Row Game</title>
+    </head>
+    <body>
+        <% include partials/nav.ejs %>
+        <h1>Add players</h1>
+        
+        <form id= "players-form" method="POST" action="/players">
+            <label for="room">Enter room name:</label><br>
+            <input type="text" name="room" value="<%= qs.room %>"><br>
+            <label for="name1">Enter player 1:</label><br>
+            <input type="text" name="name1" value="<%= qs.name1 %>"><br>
+            <label for="name2">Enter player 2:</label><br>
+            <input type="text" name="name2" value="<%= qs.name2 %>"><br>
+            <input type="submit" value="Start Game"/><br>
+        </form>
+    </body>
+</html>

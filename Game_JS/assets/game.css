@@ -1,0 +1,105 @@
+table {
+    border-spacing: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+td, th {
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+}
+
+td:hover::after { 
+    background-color: #ffa;
+    content: '\00a0';  
+    height: 10000px;    
+    left: 0;
+    position: absolute;  
+    top: -5000px;
+    width: 100%;
+    z-index: -1;        
+}
+.click_button {
+    height: 42px;
+    width: 42px;
+    border-radius: 24px;
+    background-color: rgba(255,0,0,1);
+    cursor: pointer;
+}
+
+/* Make each piece square - 32x32, set the border-radius to 16px (so that it appears round) and center it using margin-left
+and margin-right: auto */
+.piece {
+    height: 64px;
+    width: 64px;
+    display:block;
+    border-radius: 32px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Player 0 (no player) will have a light-grey background */
+.player0 {
+    background-color: #DDDDDD; /* hex colors were used, but rgb/rgba could be used as well */
+}
+
+/* player 1 will have a red background */
+.player1 {
+    background-color: #FF0000;
+}
+
+/* player 2 will have a blue background */
+.player2 {
+    background-color: #0000FF;	
+}
+
+/* set the board square to having a dark-grey border, and to be 36x36 square */
+.board_square {
+    border: 1px solid #0074B3;
+    height: 32px;
+    width: 32px;
+}
+li{
+    font-size: 16px;
+    display:inline-block;
+   margin-left: 425px;
+   
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+body{
+    background: skyblue;
+    font-family: verdana;
+    color: white;
+    padding: 20px;
+}
+h1{
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+#game_info{
+    font-size: 24px;
+}
+button {
+    background-color: #4CAF50; /* Green */
+    border: solid;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+
+
+
+
+		

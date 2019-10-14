@@ -1,0 +1,39 @@
+body{
+    background: skyblue;
+    font-family: verdana;
+    color: red;
+    padding: 20px;
+}
+h1{
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+li{
+    font-size: 16px;
+    display:inline-block;
+    margin-left: 425px;
+
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+.about{
+    font-size: 24px;
+    text-align: center;
+    color: white;
+
+}
+p{
+    font-size: 30px;
+    text-align: center;
+    color: darkblue;
+}
+.how{
+    font-size: 24px;
+    text-align: center;
+    color: white;
+
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <script src="game.js"></script>
+    <link href="assets/game.css" rel="stylesheet" type="text/css">
+    <title>5-in-a-Row Game</title>
+</head>
+
+<body onload="beginGame();">
+        <h1>5-in-a-Row Game</h1>
+        <button id="begin_game" onclick="beginGame();">Start Again</button>
+        <p id = "name1">Player 1: </p>
+		<p id = "name2">Player 2: </p>
+        <div id="board">
+            <!-- Display info about players -->
+            <div id="game_info">
+            </div>
+            <!-- Generate a game board-->
+            <table id="game_table">
+                <thead>
+                    <tr>
+                        <td>
+                            <button onclick="drop(0);">Drop</button>
+                        </td>
+                        <td>
+                            <button onclick="drop(1);">Drop</button>
+                        </td>
+                        <td>
+                            <button onclick="drop(2);">Drop</button>
+                        </td>
+                        <td>
+                            <button onclick="drop(3);">Drop</button>
+                        </td>
+                        <td>
+                            <button onclick="drop(4);">Drop</button>
+                        </td>
+                        <td>
+                            <button onclick="drop(5);">Drop</button>
+                        </td>
+                        <td>
+                            <button onclick="drop(6);">Drop</button>
+                        </td>
+                        <td>
+                            <button onclick="drop(7);">Drop</button>
+                        </td>
+                        <td>
+                            <button onclick="drop(8);">Drop</button>
+                        </td>
+                    </tr>
+                </thead>
+                <script>
+                    for (let row = 0; row <= 5; row++) {
+                        //Write code to the browser
+                        document.writeln("<tr>");
+                        for (let col = 0; col <= 8; col++) {
+                            //Write each table data element with the row and col 
+                            document.writeln("<td id='square_" + row + "_" + col + "' class='board_square'></td>");
+                        }
+                        //write the closing table row tag.
+                        document.writeln("</tr>");
+                    }
+                </script>
+            </table>
+            <!-- Game updates -->
+            <div id="game_status">
+            </div>
+        </div>
+    </body>
+</html>
